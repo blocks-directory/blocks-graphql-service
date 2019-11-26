@@ -15,7 +15,7 @@ jobs:
       - uses: actions/aws/cli@master
       - uses: serverless/github-action@master
       - name: install dependencies
-        run: yarn
+        run: yarn --production=false
       - name: lint
         run: yarn lint
       - name: tsc
