@@ -1,0 +1,17 @@
+- Effect: "Allow"
+  Action:
+  - "logs:*"
+  Resource:
+  - "*"
+
+- Effect: "Allow"
+  Action:
+    - "xray:PutTraceSegments"
+    - "xray:PutTelemetryRecords"
+  Resource:
+    - "*"
+
+- Effect: Allow
+  Action:
+    - "lambda:InvokeFunction"
+  Resource: "*"
