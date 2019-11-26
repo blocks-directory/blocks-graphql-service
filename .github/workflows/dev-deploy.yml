@@ -13,15 +13,16 @@ jobs:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
       - uses: actions/aws/cli@master
-      - uses: serverless/github-action@master
       - name: install dependencies
         run: yarn --production=false
       - name: lint
         run: yarn lint
       - name: tsc
         run: yarn tsc
-      - name: deploy the build
+      - name: serverless deploy
+        uses: serverless/github-action@master
+        with:
+          args: deploy --force
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run: sls deploy --force
