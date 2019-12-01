@@ -1,11 +1,13 @@
 import { map } from 'lodash-es'
 import {
-  Query,
   Types,
+  Query,
+  Mutation,
 } from './schemas'
 
 export default [
   'scalar JSON',
   ...map(Types),
   Query,
+  Mutation,
 ]
