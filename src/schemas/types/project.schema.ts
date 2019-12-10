@@ -2,23 +2,23 @@ import { gql } from 'apollo-server'
 
 export const Project = gql`
 type Project {
-  id: String
-  name: String
+  id: String!
+  name: String!
   description: String
-  platform: String
+  platform: String!
   runtime: String
   provider: String
   repositoryUrl: String!
   openIssues: Int
   pullRequests: Int
-  lastCommitDate: String
+  lastCommitDate: String!
   readmeUrl: String
 }
 `
 
 export const ProjectPreviewData = gql`
 type ProjectPreviewData {
-  name: String
+  name: String!
   description: String
   platform: String
   runtime: String
@@ -26,19 +26,20 @@ type ProjectPreviewData {
   repositoryUrl: String!
   openIssues: Int
   pullRequests: Int
-  lastCommitDate: String
+  lastCommitDate: String!
   readmeUrl: String
 }
 `
 
 export const ProjectListData = gql`
 type ProjectListData {
-  id: String
-  name: String
+  id: String!
+  name: String!
   description: String
-  platform: String
+  platform: String!
   runtime: String
   provider: String
-  lastCommitDate: String
+  lastCommitDate: String!
+  repositoryUrl: String!
 }
 `
