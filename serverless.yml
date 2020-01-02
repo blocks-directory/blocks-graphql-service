@@ -29,7 +29,7 @@ custom:
   dev:
     domain: dev-api.blocks.directory
     corsOrigins:
-      - 'http://localhost:3000'
+      - 'http://localhost:8000'
       - 'https://dev.blocks.directory'
   prod:
     domain: api.blocks.directory
