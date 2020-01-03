@@ -16,18 +16,9 @@ type Project {
 }
 `
 
-export const ProjectPreviewData = gql`
-type ProjectPreviewData {
-  name: String!
-  description: String
-  platform: String
-  runtime: String
-  provider: String
+export const SubmitProjectResponse = gql`
+type SubmitProjectResponse {
   repositoryUrl: String!
-  openIssues: Int
-  pullRequests: Int
-  lastCommitDate: String!
-  readmeUrl: String
 }
 `
 
