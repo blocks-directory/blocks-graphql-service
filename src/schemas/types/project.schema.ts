@@ -8,6 +8,7 @@ type Project {
   platform: String!
   runtime: String
   provider: String
+  writtenIn: String
   repositoryUrl: String!
   openIssues: Int
   pullRequests: Int
@@ -30,6 +31,7 @@ type ProjectListData {
   platform: String!
   runtime: String
   provider: String
+  writtenIn: String
   lastCommitDate: String!
   repositoryUrl: String!
 }
