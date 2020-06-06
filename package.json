@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "apollo-server": "^2.8.1",
-    "apollo-server-lambda": "^2.8.1",
+    "apollo-server-lambda": "^2.14.2",
     "bunyan": "^1.8.12",
     "graphql": "^14.4.2",
     "graphql-type-json": "^0.3.0",
